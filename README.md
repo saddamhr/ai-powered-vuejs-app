@@ -13,7 +13,7 @@ A minimalist, modern Vue 3 application showcasing AI-powered search with a clean
 
 ## Demo
 
-![Screenshot of AI-powered search UI](./public/screenshot.png)
+[Screen recording of AI-powered search UI](https://www.linkedin.com/posts/saddamhr_vue-ai-frontend-activity-7350039334697263104-HVN8?utm_source=share&utm_medium=member_desktop&rcm=ACoAACKCApsBJkW77DUY2M9Roc58o6ZFtMahTiQ)
 
 ## Tutorial
 
