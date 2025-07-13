@@ -17,7 +17,7 @@ A minimalist, modern Vue 3 application showcasing AI-powered search with a clean
 
 ## Tutorial
 
-Check out my [step-by-step tutorial on Medium]() where I explain how to build this project from scratch, including:
+Check out my [step-by-step tutorial on Medium](https://medium.com/@saddamhr/building-ai-powered-vue-js-components-smart-ui-guide-2025-30275c9067d9) where I explain how to build this project from scratch, including:
 
 - Setting up Vue.js with Vite
 - Implementing the search interface
