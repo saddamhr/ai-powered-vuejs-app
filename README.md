@@ -1,73 +1,113 @@
 # AI-Powered Vue.js App
 
-An elegant, modern Vue 3 application that provides smart, AI-powered search suggestions using Ollama and Llama 3.2. The app features a beautiful, responsive UI and a seamless user experience, making it easy to integrate AI-driven search into any project.
+A minimalist, modern Vue 3 application showcasing AI-powered search with a clean, professional interface. Built with Vue.js and Tailwind CSS, it provides a smooth, responsive search experience with intelligent suggestions.
 
 ## Features
 
-- 🔍 **Smart Search**: Get intelligent, context-aware suggestions as you type.
-- ⚡ **Debounced Input**: Suggestions only appear after you pause typing, for a smooth experience.
-- 🎨 **Modern UI**: Clean, responsive, and accessible design with smooth animations.
-- 🦙 **Ollama + Llama 3.2**: Powered by open-source LLMs for privacy and flexibility.
-- 🛠️ **Easy Customization**: Built with Vue 3 + Vite for fast development and easy theming.
+- 🎯 **Minimal & Clean**: Distraction-free interface focused on search functionality
+- 🔍 **Smart Search**: Real-time, AI-powered search suggestions
+- ⚡ **Performance**: Optimized with debounced input and smooth transitions
+- 🎨 **Modern Design**: Professional UI with light/dark mode support
+- 🛠️ **Tech Stack**: Vue 3 + Vite + Tailwind CSS
+- 📱 **Responsive**: Works seamlessly on all screen sizes
 
 ## Demo
 
 ![Screenshot of AI-powered search UI](./public/screenshot.png)
 
+## Tutorial
+
+Check out my [step-by-step tutorial on Medium]() where I explain how to build this project from scratch, including:
+
+- Setting up Vue.js with Vite
+- Implementing the search interface
+- Adding animations and transitions
+- Styling with Tailwind CSS
+- Adding dark mode support
+
+[//]: # 'TODO: Add your Medium blog link here'
+
 ## Getting Started
 
-### Prerequisites
+### Quick Start
 
-- [Node.js](https://nodejs.org/) (v18+ recommended)
-- [pnpm](https://pnpm.io/) or [npm](https://www.npmjs.com/)
-- [Ollama](https://ollama.com/) running locally with the Llama 3.2 model
+1. **Prerequisites**
 
-### Installation
+   ```bash
+   # Required: Node.js v18+
+   node -v
+   ```
 
-```sh
-pnpm install
-# or
-npm install
-```
+2. **Installation**
 
-### Development
+   ```bash
+   # Using npm
+   npm install
 
-```sh
-pnpm dev
-# or
-npm run dev
-```
+   # Using pnpm
+   pnpm install
+   ```
 
-### Production Build
+3. **Development**
 
-```sh
-pnpm build
-# or
-npm run build
-```
+   ```bash
+   npm run dev
+   # or
+   pnpm dev
+   ```
 
-## Usage
+4. **Build**
+   ```bash
+   npm run build
+   # or
+   pnpm build
+   ```
 
-1. Start your Ollama server and ensure the Llama 3.2 model is available.
-2. Run the app locally (`pnpm dev`).
-3. Type in the search bar to get smart suggestions powered by AI.
+Visit `http://localhost:5173` to see the app in action.
 
 ## Project Structure
 
-- `src/components/SmartSearch.vue` — Main smart search UI component
-- `src/composables/useAISearch.js` — Composable for AI-powered suggestions
-- `src/config/ai.js` — Model and AI config
-- `src/assets/` — Global and component styles
+```
+src/
+├── components/
+│   └── SmartSearch.vue     # Main search component
+├── composables/
+│   └── useAISearch.js      # Search logic and AI integration
+├── config/
+│   └── ai.js              # AI configuration
+└── assets/
+    └── base.css           # Global styles
+```
 
-## Customization
+## Key Features
 
-- Edit `src/components/SmartSearch.vue` for UI tweaks.
-- Adjust debounce timing or prompt in `useAISearch.js`.
-- Change model in `src/config/ai.js` as needed.
+1. **Clean Interface**
+   - Minimalist design
+   - Focus on content and functionality
+   - Smooth transitions and animations
+
+2. **Search Experience**
+   - Real-time suggestions
+   - Debounced input (400ms)
+   - Keyboard navigation support
+
+3. **Technical Details**
+   - Vue 3 Composition API
+   - Tailwind CSS for styling
+   - Dark mode support
+   - Responsive design
 
 ## Contributing
 
-Contributions are welcome! Please open issues or pull requests for improvements, bug fixes, or new features.
+Contributions are welcome! Feel free to:
+
+- Report bugs
+- Suggest features
+- Submit pull requests
+
+## Author
+
+[Md. Saddam Hossain](https://github.com/saddamhr)
 
 ## License
 
