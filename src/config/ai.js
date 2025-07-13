@@ -1,3 +1,3 @@
 export const config = {
-  MODEL_NAME: 'llama3.2',
+  MODEL_NAME: 'llama3.2'
 };

@@ -6,7 +6,7 @@ export function useAISearch() {
   const suggestions = ref([]);
   const isLoading = ref(false);
 
-  const getSuggestions = async (query) => {
+  const getSuggestions = async query => {
     isLoading.value = true;
 
     try {
@@ -16,13 +16,13 @@ export function useAISearch() {
           {
             role: 'system',
             content:
-              "You are a helpful search assistant. Provide 3-5 relevant search suggestions based on the user's partial query. Return only the suggestions, one per line.",
+              "You are a helpful search assistant. Provide 3-5 relevant search suggestions based on the user's partial query. Return only the suggestions, one per line."
           },
           {
             role: 'user',
-            content: `Suggest completions for: \"${query}\"`,
-          },
-        ],
+            content: `Suggest completions for: \"${query}\"`
+          }
+        ]
       });
       // Handle Ollama's response format
       let suggestionText = '';
@@ -44,7 +44,7 @@ export function useAISearch() {
       }
       suggestions.value = suggestionText
         .split('\n')
-        .filter((s) => s.trim())
+        .filter(s => s.trim())
         .map((text, index) => ({ id: index, text: text.trim() }));
     } catch (error) {
       console.error('AI suggestion error:', error);
@@ -57,6 +57,6 @@ export function useAISearch() {
   return {
     suggestions,
     isLoading,
-    getSuggestions,
+    getSuggestions
   };
 }
